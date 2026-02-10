@@ -66,12 +66,20 @@ Core Components:
 
 ---
 
-
 ## Demo Run Preview
 
-![Demo Output](demo_screenshot.png)
+Below is an example of the AI Repair Assistant executing structured triage logic in demo mode.
 
+![AI Repair Assistant Demo](demo%20output.png)
 
+This output demonstrates:
+
+- Weighted issue classification
+- Confidence scoring
+- Priority escalation logic
+- Secondary issue detection
+- Estimated repair time mapping
+- Structured operational formatting
 
 ## Example Output
 
@@ -121,6 +129,38 @@ This engine can be extended into:
 - Customer-facing triage tool
 
 The architecture is intentionally modular for scalability.
+
+---
+
+## How to Run
+
+1. Clone the repository:
+   git clone https://github.com/KevinTurner11/paragon-geeks-ai-repair-assistant.git
+
+2. Navigate into the project folder:
+   cd paragon-geeks-ai-repair-assistant
+
+3. Open the notebook using Jupyter Notebook or VS Code.
+
+4. Run all cells.
+
+5. Execute:
+   run_demo_cases()
+   run_interactive_mode()
+
+Interactive mode allows custom device triage testing.
+
+---
+
+## Technical Skills Demonstrated
+
+- Python rule-based classification systems
+- Weighted scoring algorithms
+- Multi-label issue detection
+- Decision escalation logic
+- Structured confidence modeling
+- Operational decision automation
+- Business logic modeling
 
 ---
 
