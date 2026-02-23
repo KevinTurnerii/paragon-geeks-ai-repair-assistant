@@ -1,25 +1,52 @@
-# PARAGON GEEKS — AI Repair Assistant
-Hybrid Rule-Based Triage Engine  
-Operational Decision Intelligence System
+# PARAGON GEEKS — Operational AI Intake Decision System  
+Hybrid Explainable AI Framework for Repair Operations
+
+## Table of Contents
+
+- [Executive Overview](#executive-overview)
+- [System Architecture & Design Principles](#system-architecture--design-principles)
+- [Business Context](#business-context)
+- [Operational Execution Simulation](#operational-execution-simulation)
+- [Core Decision Categories](#core-decision-categories)
+- [Confidence & Escalation Modeling](#confidence--escalation-modeling)
+- [Operational Impact & Deployment Potential](#operational-impact--deployment-potential)
+- [Business Intelligence & Academic Alignment](#business-intelligence--academic-alignment)
+- [Technical Skills Demonstrated](#technical-skills-demonstrated)
+- [How to Run](#how-to-run)
+
+
+## Executive Overview
+
+This project models a structured, explainable AI decision system designed to standardize intake triage within a real-world electronics repair business environment (Paragon Geeks).
+
+Rather than relying on black-box machine learning alone, the system implements a transparent, weighted rule-based classification architecture that mirrors how experienced technicians evaluate devices at intake.
+
+The framework transforms unstructured customer issue descriptions into structured, auditable operational outputs — including repair category, priority level, estimated repair duration, and secondary risk flags.
+
+This project demonstrates applied AI systems design grounded in Management Information Systems, business analytics, and operational process engineering principles.
 
 ---
+## System Architecture & Design Principles
 
-## Overview
+The AI Intake Engine is built on modular decision layers:
 
-This project simulates a real-world repair intake system for an electronics repair business.
+- Weighted keyword classification scoring
+- Multi-label issue detection
+- Escalation hierarchy logic
+- Confidence modeling framework
+- Device-type override rules
+- Secondary repair risk flagging
+- Structured time-estimation mapping
 
-The AI Repair Assistant applies structured rule-based logic to:
+Design Priorities:
 
-- Categorize incoming device issues
-- Detect multi-symptom repair scenarios
-- Estimate repair priority
-- Predict repair time expectations
-- Flag secondary repair risks
-- Route unclear cases to diagnostic workflows
+- Deterministic & explainable outputs
+- Auditability of decision paths
+- Operational consistency
+- Extensibility for ML enhancement
+- Business-rule traceability
 
-This system models operational decision automation in a small business environment.
-
----
+This architecture reflects enterprise-ready decision automation systems where explainability and governance are critical.
 
 ## Business Context
 
@@ -66,7 +93,7 @@ Core Components:
 
 ---
 
-## Demo Run Preview
+## Operational Execution Simulation
 
 Below is an example of the AI Repair Assistant executing structured triage logic in demo mode.
 
@@ -149,6 +176,29 @@ The architecture is intentionally modular for scalability.
    run_interactive_mode()
 
 Interactive mode allows custom device triage testing.
+---
+
+## Business Intelligence & Academic Alignment
+
+This project aligns directly with competencies developed through:
+
+- B.S. in Management Information Systems & Business Analytics
+- M.S. in Data Analytics (AI & Machine Learning Focus)
+- SAS Certifications in:
+  - Statistical Analysis
+  - Predictive Analytics
+  - Enterprise Performance Management
+  - Applied Data Analytics
+
+Core competencies demonstrated:
+
+- Decision system engineering
+- Structured classification modeling
+- Business process automation
+- Operational workflow standardization
+- Confidence scoring frameworks
+- Explainable AI system design
+- Domain-driven feature engineering
 
 ---
 
