@@ -1,6 +1,10 @@
 # PARAGON GEEKS — Operational AI Intake Decision System  
 Hybrid Explainable AI Framework for Repair Operations
 
+> **Business Value Summary**  
+> This system formalizes subjective repair intake into a structured, explainable AI decision framework.  
+> It demonstrates how operational workflows can be transformed into deterministic, auditable automation systems — improving consistency, reducing intake errors, and enabling downstream analytics integration.
+
 ## Table of Contents
 - [Executive Overview](#executive-overview)
 - [System Architecture](#system-architecture)
