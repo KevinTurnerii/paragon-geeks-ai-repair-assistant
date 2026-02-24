@@ -1,9 +1,10 @@
-# PARAGON GEEKS — Operational AI Intake Decision System  
-Hybrid Explainable AI Framework for Repair Operations
+# Paragon Geeks — Operational Intake Decision Automation System
+
+Rule-Based Triage Engine for Standardizing Repair Intake & Routing
 
 > **Business Value Summary**  
-> This system formalizes subjective repair intake into a structured, explainable AI decision framework.  
-> It demonstrates how operational workflows can be transformed into deterministic, auditable automation systems — improving consistency, reducing intake errors, and enabling downstream analytics integration.
+> This system formalizes repair intake into a structured, deterministic decision engine.  
+> It standardizes triage, reduces intake inconsistency, flags high-risk jobs early, and creates structured data suitable for downstream analytics and reporting.
 
 ## Table of Contents
 - [Executive Overview](#executive-overview)
@@ -14,27 +15,23 @@ Hybrid Explainable AI Framework for Repair Operations
 - [Operational Execution Simulation](#operational-execution-simulation)
 - [Confidence & Escalation Modeling](#confidence--escalation-modeling)
 - [Operational Impact & Deployment Potential](#operational-impact--deployment-potential)
-- [Business Intelligence & Academic Alignment](#business-intelligence--academic-alignment)
 - [Technical Skills Demonstrated](#technical-skills-demonstrated)
 - [How to Run](#how-to-run)
-- [Author](#author)
-
+  
 ---
-
 ## Executive Overview
 
-This project models a structured, explainable AI decision system designed to standardize repair intake triage within a real-world electronics repair business environment (Paragon Geeks).
+This project models a rule-based operational intake system designed to standardize repair triage within a real electronics repair environment.
 
-Rather than relying on black-box machine learning alone, the system implements a transparent **weighted rule-based classification engine** that mirrors how experienced technicians evaluate devices at intake.
+The system converts unstructured customer issue descriptions into structured, explainable outputs including:
 
-The framework converts unstructured customer issue descriptions into structured, auditable operational outputs — including:
-- Primary repair category
-- Priority level
-- Estimated service time
-- Secondary risk flags (multi-issue detection)
-- Confidence score
+- Primary repair category  
+- Priority level  
+- Estimated service time  
+- Secondary issue flags (multi-issue detection)  
+- Confidence score  
 
-This project demonstrates applied AI systems design grounded in **Management Information Systems, Business Analytics, and operational process engineering**.
+Rather than relying on black-box ML, the system uses a transparent weighted scoring framework that mirrors how experienced technicians evaluate devices at intake.
 
 ---
 
@@ -58,7 +55,7 @@ The AI Intake Engine is built on modular decision layers:
 - Confidence scoring framework
 - Structured time-estimation mapping
 
-Design priorities:
+Design Principles:
 
 - Deterministic & explainable outputs  
 - Auditability of decision paths  
@@ -66,7 +63,7 @@ Design priorities:
 - Extensibility for ML enhancement  
 - Business-rule traceability  
 
-This architecture reflects enterprise-ready decision automation systems where **explainability and governance** are critical.
+This architecture reflects production-ready decision automation systems where explainability and consistency are critical.
 
 ---
 
@@ -138,44 +135,19 @@ Outputs remain deterministic and explainable — supporting governance and audit
 
 ## Operational Impact & Deployment Potential
 
-This system demonstrates how repair intake can be standardized into a repeatable process:
+This system demonstrates how intake can be standardized into a repeatable, structured process:
 
-- Reduces human inconsistency at intake
-- Improves triage accuracy and routing
-- Flags high-risk jobs early (water/board-level)
-- Creates structured intake records for analytics and reporting
+- Reduces technician subjectivity at intake  
+- Improves routing consistency  
+- Flags high-risk repairs (water damage, board-level) early  
+- Generates structured intake data for reporting and analytics  
 
-Future extensions could include:
+Potential extensions:
 
-- Web-based intake portal (Streamlit / Flask)
-- CRM / ticketing integration
-- POS intake logging
-- Repair analytics dashboards
-- ML enhancement layer trained on labeled intake outcomes
-
----
-
-## Business Intelligence & Academic Alignment
-
-This project aligns directly with competencies developed through:
-
-- **B.S. in Management Information Systems & Business Analytics**
-- **M.S. in Data Analytics (AI & Machine Learning focus)**
-
-SAS-aligned analytics competencies reinforced by certifications:
-- Statistics & Data Mining for Business Intelligence  
-- Predictive Analytics Management  
-- Enterprise Performance Management  
-- Applied Data Analytics  
-
-Core competencies demonstrated:
-
-- Decision system engineering  
-- Rule-based classification design  
-- Operational process automation  
-- Explainable AI architecture  
-- Domain-driven feature engineering  
-- Governance-first system design  
+- Web-based intake portal (Streamlit / Flask)  
+- CRM or POS intake integration  
+- Repair analytics dashboards  
+- Intake outcome tracking for future ML training  
 
 ---
 
@@ -220,11 +192,7 @@ Interactive mode allows custom device triage testing.
 
 ---
 
-## Author
 
-Kevin Turner  
-Management Information Systems & Data Analytics  
-SAS Certified | Business Intelligence | AI-Focused Portfolio Development
 
 
 
