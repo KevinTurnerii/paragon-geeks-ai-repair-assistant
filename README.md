@@ -113,7 +113,7 @@ Runs a prebuilt set of realistic intake scenarios to validate category coverage 
 
 Allows a user to enter a device + issue and receive a structured triage response.
 
-![AI Intake Execution Preview](ai_intake_execution_preview.png)
+![AI Intake Execution Preview](ai_intake_execution_preview_.png)
 
 *Figure: Live triage execution demonstrating multi-issue detection and structured operational output.*
 
