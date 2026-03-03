@@ -8,7 +8,6 @@ Rule-Based Triage Engine for Standardizing Repair Intake & Routing
 
 ## Table of Contents
 - [Executive Overview](#executive-overview)
-- [System Architecture](#system-architecture)
 - [System Architecture & Design Principles](#system-architecture--design-principles)
 - [Business Context](#business-context)
 - [Repair Categories Modeled](#repair-categories-modeled)
@@ -21,9 +20,11 @@ Rule-Based Triage Engine for Standardizing Repair Intake & Routing
 ---
 ## Executive Overview
 
-This project models a rule-based operational intake system designed to standardize repair triage within a real electronics repair environment.
+This project implements a rule-based operational intake automation system designed to standardize repair triage within a production electronics repair environment.
 
-The system converts unstructured customer issue descriptions into structured, explainable outputs including:
+The system converts unstructured customer issue descriptions into structured, explainable operational outputs that support routing, prioritization, escalation logic, and downstream analytics.
+
+Structured outputs include:
 
 - Primary repair category  
 - Priority level  
@@ -31,21 +32,25 @@ The system converts unstructured customer issue descriptions into structured, ex
 - Secondary issue flags (multi-issue detection)  
 - Confidence score  
 
-Rather than relying on black-box ML, the system uses a transparent weighted scoring framework that mirrors how experienced technicians evaluate devices at intake.
-
----
-
-## System Architecture
-
-![AI Intake System Architecture](ai_intake_system_architecture.png)
-
-*Figure: Layered AI decision pipeline from customer issue description → structured operational output.*
+Rather than relying on black-box machine learning, the system uses a transparent weighted scoring framework that mirrors how experienced technicians evaluate devices at intake.
 
 ---
 
 ## System Architecture & Design Principles
 
-The AI Intake Engine is built on modular decision layers:
+![AI Intake System Architecture](ai_intake_system_architecture.png)
+
+*Figure: Layered decision pipeline from customer issue description → structured operational output.*
+
+---
+
+## System Architecture & Design Principles
+
+![Intake Decision Engine Architecture](ai_intake_system_architecture.png)
+
+*Figure: Layered decision pipeline from customer issue description → structured operational output.*
+
+The Intake Decision Engine is built on modular decision layers:
 
 - Device type inference (phone / tablet / console / computer)
 - Weighted keyword scoring engine (category scoring)
@@ -55,9 +60,9 @@ The AI Intake Engine is built on modular decision layers:
 - Confidence scoring framework
 - Structured time-estimation mapping
 
-Design Principles:
+Design principles:
 
-- Deterministic & explainable outputs  
+- Deterministic and explainable outputs  
 - Auditability of decision paths  
 - Operational consistency  
 - Extensibility for ML enhancement  
