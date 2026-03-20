@@ -2,90 +2,119 @@
 
 Rule-Based Triage Engine for Standardizing Repair Intake & Routing
 
-> **Business Value Summary**  
-> This system formalizes repair intake into a structured, deterministic decision engine.  
-> It standardizes triage, reduces intake inconsistency, flags high-risk jobs early, and creates structured data suitable for downstream analytics and reporting.
+---
 
-## Table of Contents
+## 🚀 Business Impact Snapshot
+
+- Converted **unstructured customer issue descriptions into structured operational outputs**  
+- Standardized repair intake across categories, priority, and routing logic  
+- Implemented **weighted scoring engine for deterministic classification**  
+- Enabled **multi-issue detection (primary + secondary repair flags)**  
+- Designed **confidence scoring framework for decision transparency**  
+- Simulated real-world intake workflow via **interactive triage system**  
+
+---
+
+## 📑 Table of Contents
+
 - [Executive Overview](#executive-overview)
-- [System Architecture & Design Principles](#system-architecture--design-principles)
+- [System Architecture](#system-architecture)
 - [Business Context](#business-context)
+- [Core Decision Framework](#core-decision-framework)
 - [Repair Categories Modeled](#repair-categories-modeled)
 - [Operational Execution Simulation](#operational-execution-simulation)
 - [Confidence & Escalation Modeling](#confidence--escalation-modeling)
 - [Operational Impact & Deployment Potential](#operational-impact--deployment-potential)
 - [Technical Skills Demonstrated](#technical-skills-demonstrated)
 - [How to Run](#how-to-run)
-  
+
 ---
+
 ## Executive Overview
 
-This project implements a rule-based operational intake automation system designed to standardize repair triage within a production electronics repair environment.
+This project implements a **rule-based operational intake automation system** designed to standardize repair triage in a production electronics repair environment.
 
-The system converts unstructured customer issue descriptions into structured, explainable operational outputs that support routing, prioritization, escalation logic, and downstream analytics.
+The system converts **unstructured customer issue descriptions** into structured, explainable outputs that support:
+
+- Repair routing  
+- Priority assignment  
+- Escalation logic  
+- Time estimation  
+- Downstream analytics  
 
 Structured outputs include:
 
 - Primary repair category  
 - Priority level  
 - Estimated service time  
-- Secondary issue flags (multi-issue detection)  
+- Secondary issue flags  
 - Confidence score  
 
-Rather than relying on black-box machine learning, the system uses a transparent weighted scoring framework that mirrors how experienced technicians evaluate devices at intake.
+Rather than relying on black-box machine learning, the system uses a **transparent weighted scoring framework**, mirroring how experienced technicians evaluate devices at intake.
 
 ---
 
-## System Architecture & Design Principles
-
-![AI Intake System Architecture](ai_intake_system_architecture.png)
-
-*Figure: Layered decision pipeline from customer issue description → structured operational output.*
-
----
-
-## System Architecture & Design Principles
+## System Architecture
 
 ![Intake Decision Engine Architecture](ai_intake_system_architecture.png)
 
-*Figure: Layered decision pipeline from customer issue description → structured operational output.*
+*Layered decision pipeline from customer issue → structured operational output.*
 
-The Intake Decision Engine is built on modular decision layers:
+### Decision Layers
 
-- Device type inference (phone / tablet / console / computer)
-- Weighted keyword scoring engine (category scoring)
-- Primary category determination
-- Secondary issue detection (multi-label flagging)
-- Escalation & priority logic
-- Confidence scoring framework
-- Structured time-estimation mapping
+- Device type classification (phone / tablet / console / computer)  
+- Weighted issue scoring engine  
+- Primary category determination  
+- Secondary issue detection (multi-label)  
+- Escalation & priority logic  
+- Confidence scoring framework  
+- Time estimation mapping  
 
-Design principles:
+### Design Principles
 
 - Deterministic and explainable outputs  
-- Auditability of decision paths  
+- Full decision traceability  
 - Operational consistency  
-- Extensibility for ML enhancement  
-- Business-rule traceability  
-
-This architecture reflects production-ready decision automation systems where explainability and consistency are critical.
+- Extensible architecture (ML-ready)  
+- Business-rule alignment  
 
 ---
 
 ## Business Context
 
-Designed around real intake patterns from an electronics repair environment.
+Designed using real-world repair intake patterns.
 
-Instead of generic keyword matching, this system implements:
+This system goes beyond simple keyword matching by implementing:
 
 - Weighted category scoring  
 - Multi-issue detection  
-- Escalated priority logic  
+- Priority escalation logic  
 - Secondary repair flagging  
-- Confidence scoring model  
-- Device-type overrides (e.g., console HDMI logic)  
+- Confidence scoring  
+- Device-specific overrides  
 
-This mirrors how experienced technicians triage devices in real life.
+This replicates how experienced technicians perform intake triage in practice.
+
+---
+
+## Core Decision Framework
+
+The system processes input through a structured pipeline:
+
+1. **Customer Issue Description**  
+2. **Device Type Classification**  
+3. **Weighted Keyword Scoring Engine**  
+4. **Primary Category Determination**  
+5. **Secondary Issue Detection**  
+6. **Priority & Escalation Logic**  
+7. **Confidence Scoring**  
+8. **Structured Operational Output**
+
+This ensures outputs are:
+
+- Consistent  
+- Explainable  
+- Operationally usable  
 
 ---
 
@@ -105,69 +134,78 @@ This mirrors how experienced technicians triage devices in real life.
 
 ## Operational Execution Simulation
 
-This project includes **two execution modes**:
+### 1) Auto Demo Mode (Batch Testing)
 
-### 1) Auto Demo Mode (Batch Test Cases)
+Runs prebuilt scenarios to validate system behavior.
 
-Runs a prebuilt set of realistic intake scenarios to validate category coverage and logic behavior.
+![Demo Output](demo%20output.png)
 
-![AI Repair Assistant Demo Output](demo%20output.png)
+Outputs include:
+- Category predictions  
+- Confidence scores  
+- Priority levels  
+- Time estimates  
+- Category distribution summary  
 
-*Figure: Auto demo run showing multiple devices/issues, predicted category, confidence, priority, estimated time, and category distribution.*
+---
 
-### 2) Live Interactive Triage Mode (Manual Input)
+### 2) Live Interactive Triage Mode
 
-Allows a user to enter a device + issue and receive a structured triage response.
+Allows real-time user input:
 
-![AI Intake Execution Preview](ai_intake_execution_preview_.png)
+![Interactive Mode](ai_intake_execution_preview_.png)
 
-*Figure: Live triage execution demonstrating multi-issue detection and structured operational output.*
+Example output:
+
+- Category: Screen Repair  
+- Confidence: 0.95  
+- Priority: High  
+- Estimated Time: 45–60 minutes  
+- Secondary Flags: Charging Port Repair  
 
 ---
 
 ## Confidence & Escalation Modeling
 
-The system applies operational rules that mimic real repair workflows:
+The system incorporates operational logic:
 
-- **Priority escalation** for high-risk scenarios (water damage, no power, board-level)
-- **Secondary flags** when multiple repair signals are detected (e.g., cracked screen + not charging)
-- **Confidence scoring** based on strength of category match and keyword density
-- **Time estimation mapping** that aligns with real shop expectations
+- **Priority escalation** for high-risk issues (water damage, no power)  
+- **Secondary issue detection** for multi-repair scenarios  
+- **Confidence scoring** based on keyword match strength  
+- **Time estimation mapping** aligned with real repair workflows  
 
-Outputs remain deterministic and explainable — supporting governance and auditability.
+All outputs remain **deterministic and auditable**.
 
 ---
 
 ## Operational Impact & Deployment Potential
 
-This system demonstrates how intake can be standardized into a repeatable, structured process:
+This system demonstrates how intake can be standardized into a structured process:
 
-- Reduces technician subjectivity at intake  
-- Improves routing consistency  
-- Flags high-risk repairs (water damage, board-level) early  
-- Generates structured intake data for reporting and analytics  
+- Reduces technician subjectivity  
+- Improves intake consistency  
+- Flags high-risk repairs early  
+- Enables structured data collection  
 
-Potential extensions:
+### Potential Extensions
 
-- Web-based intake portal (Streamlit / Flask)  
-- CRM or POS intake integration  
+- Web-based intake interface (Streamlit / Flask)  
+- POS / CRM integration  
 - Repair analytics dashboards  
-- Intake outcome tracking for future ML training  
+- Historical intake tracking for ML training  
 
 ---
 
 ## Technical Skills Demonstrated
 
-- Python rule-based classification systems  
+- Rule-based classification systems (Python)  
 - Weighted scoring algorithms  
 - Multi-label issue detection  
 - Escalation & priority logic  
 - Confidence scoring frameworks  
-- Structured operational output design  
-- Domain-specific keyword engineering  
-- CLI interactive workflow simulation  
-
----
+- Structured output design  
+- Domain-specific feature engineering  
+- CLI workflow simulation  
 
 ## How to Run
 
