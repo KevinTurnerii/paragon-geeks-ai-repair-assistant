@@ -1,17 +1,41 @@
-# Paragon Geeks — Operational Intake Decision Automation System
+# Paragon Geeks — Repair Intake Intelligence System
 
-Rule-Based Triage Engine for Standardizing Repair Intake & Routing
+Rule-Based Classification & Decision System for Standardizing Repair Intake Workflows
 
 ---
 
-## 🚀 Business Impact Snapshot
+## Business Problem
 
-- Converted **unstructured customer issue descriptions into structured operational outputs**  
-- Standardized repair intake across categories, priority, and routing logic  
-- Implemented **weighted scoring engine for deterministic classification**  
-- Enabled **multi-issue detection (primary + secondary repair flags)**  
-- Designed **confidence scoring framework for decision transparency**  
-- Simulated real-world intake workflow via **interactive triage system**  
+Repair intake processes are often inconsistent, relying heavily on technician judgment and unstructured customer descriptions.
+
+This creates:
+- Variability in repair classification and prioritization  
+- Inconsistent time estimates  
+- Limited structured data for downstream analytics  
+- Inefficient routing of complex or multi-issue repairs  
+
+A standardized, explainable intake system is required to improve consistency, scalability, and data quality.
+
+---
+
+## Solution
+
+Designed and implemented a rule-based intake intelligence system that converts unstructured customer issue descriptions into structured, decision-ready outputs.
+
+---
+
+## Business Impact Snapshot
+
+- Standardized repair intake by converting unstructured customer descriptions into structured operational outputs  
+- Reduced subjectivity in technician triage through rule-based classification and scoring  
+- Enabled consistent repair routing, prioritization, and time estimation  
+- Implemented multi-issue detection (primary + secondary repair flags)  
+- Designed confidence scoring framework for transparent, explainable decisions  
+- Simulated real-world intake workflow for repeatable and scalable process execution  
+
+---
+
+Built using real-world repair workflows from **Paragon Geeks**, this system models how technicians evaluate devices at intake and converts that process into a structured, scalable decision framework.
 
 ---
 
@@ -24,6 +48,7 @@ Rule-Based Triage Engine for Standardizing Repair Intake & Routing
 - [Repair Categories Modeled](#repair-categories-modeled)
 - [Operational Execution Simulation](#operational-execution-simulation)
 - [Confidence & Escalation Modeling](#confidence--escalation-modeling)
+- [Why This Matters](#why-this-matters)
 - [Operational Impact & Deployment Potential](#operational-impact--deployment-potential)
 - [Technical Skills Demonstrated](#technical-skills-demonstrated)
 - [How to Run](#how-to-run)
@@ -32,9 +57,9 @@ Rule-Based Triage Engine for Standardizing Repair Intake & Routing
 
 ## Executive Overview
 
-This project implements a **rule-based operational intake automation system** designed to standardize repair triage in a production electronics repair environment.
+This project implements a rule-based operational intake system designed to standardize repair triage in a real-world electronics repair environment.
 
-The system converts **unstructured customer issue descriptions** into structured, explainable outputs that support:
+The system converts unstructured customer issue descriptions into structured, explainable outputs that support:
 
 - Repair routing  
 - Priority assignment  
@@ -50,7 +75,7 @@ Structured outputs include:
 - Secondary issue flags  
 - Confidence score  
 
-Rather than relying on black-box machine learning, the system uses a **transparent weighted scoring framework**, mirroring how experienced technicians evaluate devices at intake.
+The system uses a transparent, rule-based scoring framework to produce explainable outputs aligned with real-world technician decision-making.
 
 ---
 
@@ -82,9 +107,9 @@ Rather than relying on black-box machine learning, the system uses a **transpare
 
 ## Business Context
 
-Designed using real-world repair intake patterns.
+Designed using real-world repair intake patterns from a production electronics repair environment.
 
-This system goes beyond simple keyword matching by implementing:
+The system goes beyond basic keyword matching by implementing:
 
 - Weighted category scoring  
 - Multi-issue detection  
@@ -101,14 +126,14 @@ This replicates how experienced technicians perform intake triage in practice.
 
 The system processes input through a structured pipeline:
 
-1. **Customer Issue Description**  
-2. **Device Type Classification**  
-3. **Weighted Keyword Scoring Engine**  
-4. **Primary Category Determination**  
-5. **Secondary Issue Detection**  
-6. **Priority & Escalation Logic**  
-7. **Confidence Scoring**  
-8. **Structured Operational Output**
+1. Customer Issue Description  
+2. Device Type Classification  
+3. Weighted Keyword Scoring Engine  
+4. Primary Category Determination  
+5. Secondary Issue Detection  
+6. Priority & Escalation Logic  
+7. Confidence Scoring  
+8. Structured Operational Output  
 
 This ensures outputs are:
 
@@ -134,7 +159,7 @@ This ensures outputs are:
 
 ## Operational Execution Simulation
 
-### 1) Auto Demo Mode (Batch Testing)
+### Auto Demo Mode (Batch Testing)
 
 Runs prebuilt scenarios to validate system behavior.
 
@@ -149,7 +174,7 @@ Outputs include:
 
 ---
 
-### 2) Live Interactive Triage Mode
+### Live Interactive Triage Mode
 
 Allows real-time user input:
 
@@ -169,12 +194,21 @@ Example output:
 
 The system incorporates operational logic:
 
-- **Priority escalation** for high-risk issues (water damage, no power)  
-- **Secondary issue detection** for multi-repair scenarios  
-- **Confidence scoring** based on keyword match strength  
-- **Time estimation mapping** aligned with real repair workflows  
+- Priority escalation for high-risk issues (water damage, no power)  
+- Secondary issue detection for multi-repair scenarios  
+- Confidence scoring based on keyword match strength  
+- Time estimation mapping aligned with real repair workflows  
 
-All outputs remain **deterministic and auditable**.
+All outputs remain deterministic and auditable.
+
+---
+
+## Why This Matters
+
+- Converts inconsistent intake into structured operational data  
+- Enables downstream analytics and performance tracking  
+- Supports scalable process standardization  
+- Provides a foundation for future machine learning integration  
 
 ---
 
@@ -207,24 +241,19 @@ This system demonstrates how intake can be standardized into a structured proces
 - Domain-specific feature engineering  
 - CLI workflow simulation  
 
+---
+
 ## How to Run
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/KevinTurner11/paragon-geeks-ai-repair-assistant.git
-cd paragon-geeks-ai-repair-assistant
+git clone https://github.com/YOUR-USERNAME/paragon-repair-intelligence-system.git
+cd paragon-repair-intelligence-system
 ```
-2. Navigate into the project folder:
+2. Open the notebook using Jupyter Notebook or VS Code
+3. Run all cells.
 
-   ```
-   cd paragon-geeks-ai-repair-assistant
-   ```
-
-3. Open the notebook using Jupyter Notebook or VS Code.
-
-4. Run all cells.
-
-5. Execute:
+4. Execute:
 
    ```
    run_demo_cases()
@@ -232,7 +261,6 @@ cd paragon-geeks-ai-repair-assistant
    ```
 
 Interactive mode allows custom device triage testing.
-
 ---
 
 
